@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200201210203_ini4.cs" />
+    <Compile Remove="Migrations\20200201210203_ini4.Designer.cs" />
+    <Compile Remove="Migrations\20200201210245_ini4.cs" />
+    <Compile Remove="Migrations\20200201210245_ini4.Designer.cs" />
+    <Compile Remove="Migrations\20200201210527_ini4.cs" />
+    <Compile Remove="Migrations\20200201210527_ini4.Designer.cs" />
+    <Compile Remove="Migrations\20200201211739_ini6.cs" />
+    <Compile Remove="Migrations\20200201211739_ini6.Designer.cs" />
+    <Compile Remove="Migrations\20200201212344_init4.cs" />
+    <Compile Remove="Migrations\20200201212344_init4.Designer.cs" />
+    <Compile Remove="Migrations\20200201212902_initl.cs" />
+    <Compile Remove="Migrations\20200201212902_initl.Designer.cs" />
+    <Compile Remove="Migrations\20200201212953_initl.cs" />
+    <Compile Remove="Migrations\20200201212953_initl.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\timesheet.model\timesheet.model.csproj" />
+  </ItemGroup>
+
+</Project>
